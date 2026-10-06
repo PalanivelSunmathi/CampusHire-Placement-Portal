@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusHire | Student Placement Portal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg professional-navbar">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-icon">C</span>
+                CampusHire
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar">
+
+                <i class="bi bi-list"></i>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#jobs">
+                            Jobs
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#internships">
+                            Internships
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#companies">
+                            Companies
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-login" href="#login">
+                            Login
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-register" href="registration.html">
+                            Get Started
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero-section">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-7">
+
+                    <div class="hero-badge">
+                        <i class="bi bi-stars"></i>
+                        Smart Placement Management
+                    </div>
+
+                    <h1>
+                        Build Your Career.
+                        <span>Find Your Opportunity.</span>
+                    </h1>
+
+                    <p class="hero-text">
+                        CampusHire connects students with job opportunities,
+                        internships and companies through one simple
+                        placement platform.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#jobs" class="btn btn-primary-custom">
+                            Explore Opportunities
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                        <a href="registration.html" class="btn btn-outline-custom">
+                            Create Student Profile
+                        </a>
+
+                    </div>
+
+                    <div class="hero-trust">
+
+                        <div>
+                            <strong>120+</strong>
+                            <span>Jobs</span>
+                        </div>
+
+                        <div>
+                            <strong>80+</strong>
+                            <span>Internships</span>
+                        </div>
+
+                        <div>
+                            <strong>50+</strong>
+                            <span>Companies</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HERO CARD -->
+
+                <div class="col-lg-5">
+
+                    <div class="hero-dashboard-card">
+
+                        <div class="mini-card-header">
+
+                            <div>
+                                <small>Student Dashboard</small>
+                                <h5>Career Overview</h5>
+                            </div>
+
+                            <div class="online-dot"></div>
+
+                        </div>
+
+
+                        <div class="profile-mini">
+
+                            <div class="profile-avatar">
+                                S
+                            </div>
+
+                            <div>
+                                <strong>Student Profile</strong>
+                                <small>Placement Candidate</small>
+                            </div>
+
+                        </div>
+
+
+                        <div class="completion-area">
+
+                            <div class="completion-text">
+                                <span>Profile Completion</span>
+                                <strong>80%</strong>
+                            </div>
+
+                            <div class="progress">
+                                <div class="progress-bar"
+                                    style="width:80%">
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="mini-stats">
+
+                            <div class="mini-stat">
+                                <i class="bi bi-briefcase"></i>
+                                <strong>12</strong>
+                                <span>Jobs</span>
+                            </div>
+
+                            <div class="mini-stat">
+                                <i class="bi bi-send"></i>
+                                <strong>4</strong>
+                                <span>Applied</span>
+                            </div>
+
+                            <div class="mini-stat">
+                                <i class="bi bi-check-circle"></i>
+                                <strong>2</strong>
+                                <span>Shortlisted</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="recent-mini">
+
+                            <div class="recent-mini-title">
+                                Recent Application
+                            </div>
+
+                            <div class="recent-mini-item">
+
+                                <div class="company-mini-icon">
+                                    A
+                                </div>
+
+                                <div>
+                                    <strong>Java Developer</strong>
+                                    <small>ABC Technologies</small>
+                                </div>
+
+                                <span class="status pending">
+                                    Pending
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- STATS -->
+
+    <section class="stats-section">
+
+        <div class="container">
+
+            <div class="stats-wrapper">
+
+                <div class="stat-item">
+
+                    <div class="stat-icon">
+                        <i class="bi bi-briefcase"></i>
+                    </div>
+
+                    <div>
+                        <strong>120+</strong>
+                        <span>Job Opportunities</span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-item">
+
+                    <div class="stat-icon">
+                        <i class="bi bi-mortarboard"></i>
+                    </div>
+
+                    <div>
+                        <strong>80+</strong>
+                        <span>Internships</span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-item">
+
+                    <div class="stat-icon">
+                        <i class="bi bi-buildings"></i>
+                    </div>
+
+                    <div>
+                        <strong>50+</strong>
+                        <span>Partner Companies</span>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-item">
+
+                    <div class="stat-icon">
+                        <i class="bi bi-people"></i>
+                    </div>
+
+                    <div>
+                        <strong>2K+</strong>
+                        <span>Student Profiles</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- JOBS -->
+
+    <section class="section" id="jobs">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        OPPORTUNITIES
+                    </span>
+
+                    <h2>Latest Job Openings</h2>
+
+                    <p>
+                        Explore current opportunities and find roles
+                        that match your skills.
+                    </p>
+
+                </div>
+
+                <a href="application.html" class="view-all">
+                    View All Jobs
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <!-- SEARCH -->
+
+            <div class="search-panel">
+
+                <div class="row g-3">
+
+                    <div class="col-lg-5">
+
+                        <div class="input-icon">
+
+                            <i class="bi bi-search"></i>
+
+                            <input type="text"
+                                id="jobSearch"
+                                class="form-control"
+                                placeholder="Search job title or company">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-3">
+
+                        <select id="jobType" class="form-select">
+
+                            <option value="">
+                                All Job Types
+                            </option>
+
+                            <option value="Java">
+                                Java
+                            </option>
+
+                            <option value="Web">
+                                Web Development
+                            </option>
+
+                            <option value="Graduate">
+                                Graduate Engineer
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="col-lg-3">
+
+                        <select id="jobLocation" class="form-select">
+
+                            <option value="">
+                                All Locations
+                            </option>
+
+                            <option value="Chennai">
+                                Chennai
+                            </option>
+
+                            <option value="Bangalore">
+                                Bangalore
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="col-lg-1">
+
+                        <button class="btn search-button w-100"
+                            onclick="filterJobs()">
+
+                            <i class="bi bi-search"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="row g-4 mt-2">
+
+                <!-- JOB 1 -->
+
+                <div class="col-lg-4 job-item"
+                    data-type="Java"
+                    data-location="Chennai">
+
+                    <div class="job-card">
+
+                        <div class="job-top">
+
+                            <div class="company-logo">
+                                A
+                            </div>
+
+                            <span class="job-type">
+                                Full Time
+                            </span>
+
+                        </div>
+
+                        <h4>Java Developer</h4>
+
+                        <p class="company-name">
+                            ABC Technologies
+                        </p>
+
+                        <div class="job-info">
+                            <span>
+                                <i class="bi bi-geo-alt"></i>
+                                Chennai
+                            </span>
+
+                            <span>
+                                <i class="bi bi-cash"></i>
+                                ₹5–7 LPA
+                            </span>
+                        </div>
+
+                        <div class="skill-tags">
+
+                            <span>Java</span>
+                            <span>OOP</span>
+                            <span>SQL</span>
+
+                        </div>
+
+                        <a href="application.html"
+                            class="apply-link">
+                            Apply Now
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- JOB 2 -->
+
+                <div class="col-lg-4 job-item"
+                    data-type="Web"
+                    data-location="Chennai">
+
+                    <div class="job-card">
+
+                        <div class="job-top">
+
+                            <div class="company-logo logo-blue">
+                                X
+                            </div>
+
+                            <span class="job-type">
+                                Full Time
+                            </span>
+
+                        </div>
+
+                        <h4>Web Developer</h4>
+
+                        <p class="company-name">
+                            XYZ Solutions
+                        </p>
+
+                        <div class="job-info">
+
+                            <span>
+                                <i class="bi bi-geo-alt"></i>
+                                Chennai
+                            </span>
+
+                            <span>
+                                <i class="bi bi-cash"></i>
+                                ₹4–6 LPA
+                            </span>
+
+                        </div>
+
+                        <div class="skill-tags">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                        <a href="application.html"
+                            class="apply-link">
+                            Apply Now
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- JOB 3 -->
+
+                <div class="col-lg-4 job-item"
+                    data-type="Graduate"
+                    data-location="Bangalore">
+
+                    <div class="job-card">
+
+                        <div class="job-top">
+
+                            <div class="company-logo logo-green">
+                                T
+                            </div>
+
+                            <span class="job-type">
+                                Fresher
+                            </span>
+
+                        </div>
+
+                        <h4>Graduate Engineer Trainee</h4>
+
+                        <p class="company-name">
+                            Tech Industries
+                        </p>
+
+                        <div class="job-info">
+
+                            <span>
+                                <i class="bi bi-geo-alt"></i>
+                                Bangalore
+                            </span>
+
+                            <span>
+                                <i class="bi bi-cash"></i>
+                                ₹4–5 LPA
+                            </span>
+
+                        </div>
+
+                        <div class="skill-tags">
+
+                            <span>Programming</span>
+                            <span>Problem Solving</span>
+
+                        </div>
+
+                        <a href="application.html"
+                            class="apply-link">
+                            Apply Now
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WHY US -->
+
+    <section class="section light-section">
+
+        <div class="container">
+
+            <div class="section-heading centered">
+
+                <span class="section-label">
+                    WHY CAMPUSHIRE
+                </span>
+
+                <h2>Everything You Need for Your Career</h2>
+
+                <p>
+                    A simple platform to manage your entire placement journey.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="bi bi-search"></i>
+                        </div>
+
+                        <h4>Discover Opportunities</h4>
+
+                        <p>
+                            Search jobs and internships based on
+                            your skills, interests and location.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="bi bi-send"></i>
+                        </div>
+
+                        <h4>Apply Easily</h4>
+
+                        <p>
+                            Submit applications and manage your
+                            placement activities from one platform.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            <i class="bi bi-graph-up-arrow"></i>
+                        </div>
+
+                        <h4>Track Your Progress</h4>
+
+                        <p>
+                            Monitor your applications, profile
+                            completion and selection status.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTERNSHIPS -->
+
+    <section class="section" id="internships">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        INTERNSHIPS
+                    </span>
+
+                    <h2>Build Real-World Experience</h2>
+
+                    <p>
+                        Start your career with practical experience.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <div class="col-lg-6">
+
+                    <div class="internship-card">
+
+                        <div class="internship-icon">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+
+                        <div>
+
+                            <span class="internship-label">
+                                SOFTWARE DEVELOPMENT
+                            </span>
+
+                            <h4>Java Developer Intern</h4>
+
+                            <p>
+                                Work with Java, OOP, Maven and
+                                software development practices.
+                            </p>
+
+                            <div class="internship-meta">
+
+                                <span>
+                                    <i class="bi bi-clock"></i>
+                                    2 Months
+                                </span>
+
+                                <span>
+                                    <i class="bi bi-geo-alt"></i>
+                                    Remote
+                                </span>
+
+                            </div>
+
+                            <a href="application.html"
+                                class="btn btn-small">
+                                Apply Internship
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6">
+
+                    <div class="internship-card">
+
+                        <div class="internship-icon blue-icon">
+                            <i class="bi bi-globe2"></i>
+                        </div>
+
+                        <div>
+
+                            <span class="internship-label">
+                                WEB DEVELOPMENT
+                            </span>
+
+                            <h4>Web Development Intern</h4>
+
+                            <p>
+                                Learn HTML, CSS, JavaScript and
+                                modern web development.
+                            </p>
+
+                            <div class="internship-meta">
+
+                                <span>
+                                    <i class="bi bi-clock"></i>
+                                    1 Month
+                                </span>
+
+                                <span>
+                                    <i class="bi bi-geo-alt"></i>
+                                    Remote
+                                </span>
+
+                            </div>
+
+                            <a href="application.html"
+                                class="btn btn-small">
+                                Apply Internship
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- COMPANIES -->
+
+    <section class="section light-section"
+        id="companies">
+
+        <div class="container">
+
+            <div class="section-heading centered">
+
+                <span class="section-label">
+                    COMPANIES
+                </span>
+
+                <h2>Companies Hiring Students</h2>
+
+                <p>
+                    Explore organizations offering career opportunities.
+                </p>
+
+            </div>
+
+
+            <div class="company-grid">
+
+                <div class="company-box">
+                    <div class="company-big-logo">A</div>
+                    <h5>ABC Technologies</h5>
+                    <span>IT Services</span>
+                </div>
+
+                <div class="company-box">
+                    <div class="company-big-logo blue-logo">X</div>
+                    <h5>XYZ Solutions</h5>
+                    <span>Software Development</span>
+                </div>
+
+                <div class="company-box">
+                    <div class="company-big-logo green-logo">T</div>
+                    <h5>Tech Industries</h5>
+                    <span>Engineering</span>
+                </div>
+
+                <div class="company-box">
+                    <div class="company-big-logo orange-logo">C</div>
+                    <h5>Code Alpha</h5>
+                    <span>Software</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LOGIN -->
+
+    <section class="login-section" id="login">
+
+        <div class="container">
+
+            <div class="login-wrapper">
+
+                <div class="login-info">
+
+                    <span class="section-label">
+                        STUDENT LOGIN
+                    </span>
+
+                    <h2>
+                        Continue Your Placement Journey
+                    </h2>
+
+                    <p>
+                        Login to access your dashboard, applications,
+                        opportunities and student profile.
+                    </p>
+
+                    <div class="login-points">
+
+                        <div>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Track job applications
+                        </div>
+
+                        <div>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Manage your student profile
+                        </div>
+
+                        <div>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Explore new opportunities
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="login-card">
+
+                    <div class="login-card-heading">
+
+                        <h3>Welcome Back</h3>
+
+                        <p>Login to your student account</p>
+
+                    </div>
+
+
+                    <form id="loginForm">
+
+                        <div class="form-group">
+
+                            <label>Email Address</label>
+
+                            <div class="input-icon">
+
+                                <i class="bi bi-envelope"></i>
+
+                                <input type="email"
+                                    id="loginEmail"
+                                    class="form-control"
+                                    placeholder="Enter your email"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Password</label>
+
+                            <div class="input-icon">
+
+                                <i class="bi bi-lock"></i>
+
+                                <input type="password"
+                                    id="loginPassword"
+                                    class="form-control"
+                                    placeholder="Enter your password"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+
+                        <button type="submit"
+                            class="btn btn-primary-custom w-100">
+
+                            Login
+                            <i class="bi bi-arrow-right"></i>
+
+                        </button>
+
+                    </form>
+
+
+                    <p class="register-text">
+
+                        Don't have an account?
+
+                        <a href="registration.html">
+                            Create Account
+                        </a>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-main">
+
+                <div>
+
+                    <a class="footer-brand" href="index.html">
+                        <span class="brand-icon">C</span>
+                        CampusHire
+                    </a>
+
+                    <p>
+                        A student placement management platform
+                        connecting talent with opportunities.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h6>Platform</h6>
+
+                    <a href="#jobs">Jobs</a>
+                    <a href="#internships">Internships</a>
+                    <a href="#companies">Companies</a>
+
+                </div>
+
+
+                <div>
+
+                    <h6>Students</h6>
+
+                    <a href="registration.html">Register</a>
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="#login">Login</a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <span>
+                    © 2026 CampusHire. All rights reserved.
+                </span>
+
+                <span>
+                    Student Placement Management System
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

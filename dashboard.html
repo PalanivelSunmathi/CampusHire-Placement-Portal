@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>CampusHire | Student Dashboard</title>
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="dashboard-page">
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="dashboard-sidebar">
+
+        <a href="index.html"
+            class="dashboard-brand">
+
+            <span class="brand-icon">C</span>
+
+            CampusHire
+
+        </a>
+
+
+        <div class="sidebar-profile">
+
+            <div class="sidebar-avatar"
+                id="sidebarAvatar">
+
+                S
+
+            </div>
+
+            <div>
+
+                <strong id="sidebarName">
+                    Student
+                </strong>
+
+                <small>
+                    Student Account
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html"
+                class="active">
+
+                <i class="bi bi-grid"></i>
+                Dashboard
+
+            </a>
+
+            <a href="index.html#jobs">
+
+                <i class="bi bi-briefcase"></i>
+                Find Jobs
+
+            </a>
+
+            <a href="index.html#internships">
+
+                <i class="bi bi-mortarboard"></i>
+                Internships
+
+            </a>
+
+            <a href="application.html">
+
+                <i class="bi bi-send"></i>
+                Apply
+
+            </a>
+
+            <a href="#profile">
+
+                <i class="bi bi-person"></i>
+                My Profile
+
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="index.html">
+
+                <i class="bi bi-house"></i>
+                Home
+
+            </a>
+
+            <button onclick="logout()">
+
+                <i class="bi bi-box-arrow-right"></i>
+                Logout
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+
+    <main class="dashboard-main">
+
+
+        <!-- TOPBAR -->
+
+        <header class="dashboard-topbar">
+
+            <div>
+
+                <button class="mobile-menu-btn"
+                    onclick="toggleSidebar()">
+
+                    <i class="bi bi-list"></i>
+
+                </button>
+
+                <span class="dashboard-page-title">
+                    Dashboard
+                </span>
+
+            </div>
+
+
+            <div class="dashboard-user">
+
+                <div class="notification-btn">
+
+                    <i class="bi bi-bell"></i>
+
+                    <span>2</span>
+
+                </div>
+
+                <div class="top-avatar"
+                    id="topAvatar">
+
+                    S
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+
+        <div class="dashboard-content">
+
+
+            <!-- WELCOME -->
+
+            <div class="dashboard-welcome">
+
+                <div>
+
+                    <span class="section-label">
+                        STUDENT DASHBOARD
+                    </span>
+
+                    <h1>
+                        Welcome back,
+                        <span id="studentName">
+                            Student
+                        </span>
+                    </h1>
+
+                    <p>
+                        Here's an overview of your placement journey.
+                    </p>
+
+                </div>
+
+                <a href="index.html#jobs"
+                    class="btn btn-primary-custom">
+
+                    Find Opportunities
+                    <i class="bi bi-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+
+            <!-- STAT CARDS -->
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-xl-3">
+
+                    <div class="dashboard-stat-card">
+
+                        <div class="dashboard-stat-icon purple">
+                            <i class="bi bi-briefcase"></i>
+                        </div>
+
+                        <div>
+
+                            <span>Available Jobs</span>
+
+                            <h3>12</h3>
+
+                            <small>
+                                Explore opportunities
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-xl-3">
+
+                    <div class="dashboard-stat-card">
+
+                        <div class="dashboard-stat-icon blue">
+                            <i class="bi bi-send"></i>
+                        </div>
+
+                        <div>
+
+                            <span>Applications</span>
+
+                            <h3 id="applicationCount">
+                                4
+                            </h3>
+
+                            <small>
+                                Applications submitted
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-xl-3">
+
+                    <div class="dashboard-stat-card">
+
+                        <div class="dashboard-stat-icon green">
+                            <i class="bi bi-check-circle"></i>
+                        </div>
+
+                        <div>
+
+                            <span>Shortlisted</span>
+
+                            <h3>2</h3>
+
+                            <small>
+                                Selection progress
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-xl-3">
+
+                    <div class="dashboard-stat-card">
+
+                        <div class="dashboard-stat-icon orange">
+                            <i class="bi bi-mortarboard"></i>
+                        </div>
+
+                        <div>
+
+                            <span>Internships</span>
+
+                            <h3>8</h3>
+
+                            <small>
+                                Opportunities available
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MAIN GRID -->
+
+            <div class="row g-4 mt-1">
+
+
+                <!-- APPLICATIONS -->
+
+                <div class="col-xl-8">
+
+                    <div class="dashboard-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+
+                                <h3>Recent Applications</h3>
+
+                                <p>
+                                    Track your latest applications.
+                                </p>
+
+                            </div>
+
+                            <a href="application.html">
+                                Apply New
+                            </a>
+
+                        </div>
+
+
+                        <div class="table-responsive">
+
+                            <table class="table application-table">
+
+                                <thead>
+
+                                    <tr>
+
+                                        <th>Position</th>
+                                        <th>Company</th>
+                                        <th>Date</th>
+                                        <th>Status</th>
+
+                                    </tr>
+
+                                </thead>
+
+                                <tbody id="applicationTableBody">
+
+                                    <tr>
+
+                                        <td>
+                                            <strong>Java Developer</strong>
+                                        </td>
+
+                                        <td>
+                                            ABC Technologies
+                                        </td>
+
+                                        <td>
+                                            28 Sep 2026
+                                        </td>
+
+                                        <td>
+                                            <span class="status pending">
+                                                Pending
+                                            </span>
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td>
+                                            <strong>Web Developer</strong>
+                                        </td>
+
+                                        <td>
+                                            XYZ Solutions
+                                        </td>
+
+                                        <td>
+                                            25 Sep 2026
+                                        </td>
+
+                                        <td>
+                                            <span class="status shortlisted">
+                                                Shortlisted
+                                            </span>
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROFILE -->
+
+                <div class="col-xl-4"
+                    id="profile">
+
+                    <div class="dashboard-panel profile-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+
+                                <h3>My Profile</h3>
+
+                                <p>
+                                    Your student information
+                                </p>
+
+                            </div>
+
+                            <i class="bi bi-person-circle profile-header-icon"></i>
+
+                        </div>
+
+
+                        <div class="profile-large">
+
+                            <div class="large-avatar"
+                                id="profileAvatar">
+
+                                S
+
+                            </div>
+
+                            <h4 id="profileName">
+                                Student Name
+                            </h4>
+
+                            <p id="profileCourse">
+                                Student
+                            </p>
+
+                        </div>
+
+
+                        <div class="profile-details">
+
+                            <div>
+
+                                <span>Email</span>
+
+                                <strong id="profileEmail">
+                                    student@email.com
+                                </strong>
+
+                            </div>
+
+                            <div>
+
+                                <span>College</span>
+
+                                <strong id="profileCollege">
+                                    College Name
+                                </strong>
+
+                            </div>
+
+                            <div>
+
+                                <span>Phone</span>
+
+                                <strong id="profilePhone">
+                                    Not available
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="profile-completion">
+
+                            <div>
+
+                                <span>Profile Completion</span>
+
+                                <strong>80%</strong>
+
+                            </div>
+
+                            <div class="progress">
+
+                                <div class="progress-bar"
+                                    style="width:80%">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK ACTIONS + NOTIFICATIONS -->
+
+            <div class="row g-4 mt-1">
+
+
+                <div class="col-lg-6">
+
+                    <div class="dashboard-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+
+                                <h3>Quick Actions</h3>
+
+                                <p>
+                                    Access important placement features.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="quick-actions">
+
+                            <a href="index.html#jobs">
+
+                                <div class="quick-icon">
+                                    <i class="bi bi-search"></i>
+                                </div>
+
+                                <div>
+
+                                    <strong>Explore Jobs</strong>
+
+                                    <span>
+                                        Find suitable job opportunities
+                                    </span>
+
+                                </div>
+
+                                <i class="bi bi-chevron-right"></i>
+
+                            </a>
+
+
+                            <a href="index.html#internships">
+
+                                <div class="quick-icon blue">
+                                    <i class="bi bi-mortarboard"></i>
+                                </div>
+
+                                <div>
+
+                                    <strong>Find Internships</strong>
+
+                                    <span>
+                                        Gain practical experience
+                                    </span>
+
+                                </div>
+
+                                <i class="bi bi-chevron-right"></i>
+
+                            </a>
+
+
+                            <a href="application.html">
+
+                                <div class="quick-icon green">
+                                    <i class="bi bi-send"></i>
+                                </div>
+
+                                <div>
+
+                                    <strong>Submit Application</strong>
+
+                                    <span>
+                                        Apply for a new position
+                                    </span>
+
+                                </div>
+
+                                <i class="bi bi-chevron-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6">
+
+                    <div class="dashboard-panel">
+
+                        <div class="panel-header">
+
+                            <div>
+
+                                <h3>Notifications</h3>
+
+                                <p>
+                                    Latest placement updates.
+                                </p>
+
+                            </div>
+
+                            <i class="bi bi-bell profile-header-icon"></i>
+
+                        </div>
+
+
+                        <div class="notification-item">
+
+                            <div class="notification-icon">
+                                <i class="bi bi-check-circle"></i>
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Application shortlisted
+                                </strong>
+
+                                <span>
+                                    Your Web Developer application
+                                    has been shortlisted.
+                                </span>
+
+                                <small>
+                                    2 hours ago
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="notification-item">
+
+                            <div class="notification-icon blue">
+                                <i class="bi bi-briefcase"></i>
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    New job opportunity
+                                </strong>
+
+                                <span>
+                                    A new Java Developer position
+                                    is available.
+                                </span>
+
+                                <small>
+                                    Yesterday
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="notification-item">
+
+                            <div class="notification-icon orange">
+                                <i class="bi bi-person"></i>
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Complete your profile
+                                </strong>
+
+                                <span>
+                                    Add more information to improve
+                                    your profile.
+                                </span>
+
+                                <small>
+                                    2 days ago
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>CampusHire | Job Application</title>
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="auth-page">
+
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar professional-navbar">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+
+                <span class="brand-icon">C</span>
+
+                CampusHire
+
+            </a>
+
+            <a href="index.html#jobs"
+                class="back-home">
+
+                <i class="bi bi-arrow-left"></i>
+                Back to Jobs
+
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- APPLICATION -->
+
+    <section class="auth-section application-page">
+
+        <div class="container">
+
+            <div class="application-layout">
+
+
+                <!-- JOB INFO -->
+
+                <div class="application-info">
+
+                    <span class="section-label">
+                        JOB APPLICATION
+                    </span>
+
+                    <h1>
+                        Take the Next
+                        <span>Career Step</span>
+                    </h1>
+
+                    <p>
+                        Complete your application details and
+                        submit your profile for consideration.
+                    </p>
+
+
+                    <div class="selected-job-card">
+
+                        <div class="company-logo">
+                            A
+                        </div>
+
+                        <div>
+
+                            <small>Selected Opportunity</small>
+
+                            <h4 id="selectedJobTitle">
+                                Java Developer
+                            </h4>
+
+                            <p>
+                                ABC Technologies
+                            </p>
+
+                            <span>
+                                <i class="bi bi-geo-alt"></i>
+                                Chennai
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="application-note">
+
+                        <i class="bi bi-info-circle"></i>
+
+                        <div>
+
+                            <strong>Application Tip</strong>
+
+                            <p>
+                                Make sure your details and skills
+                                match the selected job before submitting.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FORM -->
+
+                <div class="auth-card application-card">
+
+                    <div class="auth-card-header">
+
+                        <h2>Application Details</h2>
+
+                        <p>
+                            Complete the form below.
+                        </p>
+
+                    </div>
+
+
+                    <form id="applicationForm">
+
+
+                        <div class="row g-3">
+
+
+                            <div class="col-md-6">
+
+                                <label>
+                                    Full Name
+                                </label>
+
+                                <input type="text"
+                                    id="applicantName"
+                                    class="form-control"
+                                    placeholder="Enter your name"
+                                    required>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label>
+                                    Email Address
+                                </label>
+
+                                <input type="email"
+                                    id="applicantEmail"
+                                    class="form-control"
+                                    placeholder="Enter email"
+                                    required>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label>
+                                    Phone Number
+                                </label>
+
+                                <input type="tel"
+                                    id="applicantPhone"
+                                    class="form-control"
+                                    placeholder="10-digit phone number"
+                                    maxlength="10"
+                                    required>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label>
+                                    Qualification
+                                </label>
+
+                                <input type="text"
+                                    id="qualification"
+                                    class="form-control"
+                                    placeholder="Example: B.E EEE"
+                                    required>
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <label>
+                                    Select Job
+                                </label>
+
+                                <select id="appliedJob"
+                                    class="form-select"
+                                    required>
+
+                                    <option value="">
+                                        Select a job
+                                    </option>
+
+                                    <option value="Java Developer - ABC Technologies">
+                                        Java Developer - ABC Technologies
+                                    </option>
+
+                                    <option value="Web Developer - XYZ Solutions">
+                                        Web Developer - XYZ Solutions
+                                    </option>
+
+                                    <option value="Graduate Engineer Trainee - Tech Industries">
+                                        Graduate Engineer Trainee - Tech Industries
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <label>
+                                    Technical Skills
+                                </label>
+
+                                <input type="text"
+                                    id="skills"
+                                    class="form-control"
+                                    placeholder="Example: Java, HTML, SQL"
+                                    required>
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <label>
+                                    Experience / Internship
+                                </label>
+
+                                <textarea id="experience"
+                                    class="form-control"
+                                    rows="4"
+                                    placeholder="Mention your projects or internship experience"></textarea>
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <label>
+                                    Resume
+                                </label>
+
+                                <input type="file"
+                                    id="resume"
+                                    class="form-control"
+                                    accept=".pdf,.doc,.docx">
+
+                                <small class="form-help">
+                                    PDF, DOC or DOCX format
+                                </small>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-check terms-check">
+
+                            <input class="form-check-input"
+                                type="checkbox"
+                                id="agreeTerms"
+                                required>
+
+                            <label class="form-check-label"
+                                for="agreeTerms">
+
+                                I confirm that the information provided
+                                is accurate.
+
+                            </label>
+
+                        </div>
+
+
+                        <button type="submit"
+                            class="btn btn-primary-custom w-100">
+
+                            Submit Application
+                            <i class="bi bi-send"></i>
+
+                        </button>
+
+
+                        <div class="application-links">
+
+                            <a href="index.html#jobs">
+                                Browse More Jobs
+                            </a>
+
+                            <a href="dashboard.html">
+                                View Dashboard
+                            </a>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
